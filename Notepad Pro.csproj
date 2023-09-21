@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Notepad_Pro</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;ARM64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModernWpfUI" Version="0.9.6" />
+  </ItemGroup>
+
+</Project>

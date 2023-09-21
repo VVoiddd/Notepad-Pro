@@ -1,0 +1,28 @@
+﻿<Window x:Class="Notepad_Pro.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Notepad Pro" Height="450" Width="800">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="New" Click="NewFile"/>
+                <MenuItem Header="Open" Click="OpenFile"/>
+                <MenuItem Header="Save" Click="SaveFile"/>
+                <MenuItem Header="Exit" Click="CloseApp"/>
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <!-- Add more Edit functions here -->
+            </MenuItem>
+            <MenuItem Header="Theme">
+                <MenuItem Header="Light" Click="OnLightThemeClick"/>
+                <MenuItem Header="Dark" Click="OnDarkThemeClick"/>
+                <MenuItem Header="Solarized Light" Click="OnSolarizedLightClick"/>
+                <MenuItem Header="Solarized Dark" Click="OnSolarizedDarkClick"/>
+                <MenuItem Header="Monokai" Click="OnMonokaiClick"/>
+                <MenuItem Header="Dracula" Click="OnDraculaClick"/>
+                <MenuItem Header="Nord" Click="OnNordClick"/>
+            </MenuItem>
+        </Menu>
+        <TextBox Name="MainTextBox" AcceptsReturn="True" AcceptsTab="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Margin="0,25,0,0"/>
+    </Grid>
+</Window>

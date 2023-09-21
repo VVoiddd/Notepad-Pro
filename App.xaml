@@ -1,0 +1,19 @@
+﻿<Application x:Class="Notepad_Pro.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Notepad_Pro">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/ModernWpf;component/Themes/Default.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Custom themes (initially set to default colors) -->
+            <Color x:Key="SolarizedLightBackground" A="255" R="253" G="246" B="227"/>
+            <Color x:Key="SolarizedDarkBackground" A="255" R="0" G="43" B="54"/>
+            <Color x:Key="DraculaBackground" A="255" R="40" G="42" B="54"/>
+            <Color x:Key="MonokaiBackground" A="255" R="39" G="40" B="34"/>
+            <Color x:Key="OceanicNextBackground" A="255" R="1" G="22" B="39"/>
+            <!-- ... add more color definitions for other theme aspects ... -->
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
