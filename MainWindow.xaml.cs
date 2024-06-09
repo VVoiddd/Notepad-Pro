@@ -12,11 +12,13 @@ namespace Notepad_Pro
             InitializeComponent();
         }
 
+        // New file operation
         private void NewFile(object sender, RoutedEventArgs e)
         {
             MainTextBox.Clear();
         }
 
+        // Open file operation
         private void OpenFile(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -26,6 +28,7 @@ namespace Notepad_Pro
             }
         }
 
+        // Save file operation
         private void SaveFile(object sender, RoutedEventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -35,11 +38,13 @@ namespace Notepad_Pro
             }
         }
 
+        // Close application
         private void CloseApp(object sender, RoutedEventArgs e)
         {
             Close();
         }
 
+        // Change to light theme
         private void OnLightThemeClick(object sender, RoutedEventArgs e)
         {
             this.Background = Brushes.White;
@@ -47,6 +52,7 @@ namespace Notepad_Pro
             MainTextBox.Foreground = Brushes.Black;
         }
 
+        // Change to dark theme
         private void OnDarkThemeClick(object sender, RoutedEventArgs e)
         {
             this.Background = Brushes.Black;
@@ -54,6 +60,7 @@ namespace Notepad_Pro
             MainTextBox.Foreground = Brushes.White;
         }
 
+        // Change to solarized light theme
         private void OnSolarizedLightClick(object sender, RoutedEventArgs e)
         {
             this.Background = Brushes.AliceBlue;
@@ -61,6 +68,7 @@ namespace Notepad_Pro
             MainTextBox.Foreground = Brushes.DarkSlateGray;
         }
 
+        // Change to solarized dark theme
         private void OnSolarizedDarkClick(object sender, RoutedEventArgs e)
         {
             this.Background = Brushes.DarkSlateGray;
@@ -68,6 +76,7 @@ namespace Notepad_Pro
             MainTextBox.Foreground = Brushes.AliceBlue;
         }
 
+        // Change to Monokai theme
         private void OnMonokaiClick(object sender, RoutedEventArgs e)
         {
             this.Background = Brushes.Gray;
@@ -75,6 +84,7 @@ namespace Notepad_Pro
             MainTextBox.Foreground = Brushes.Cyan;
         }
 
+        // Change to Dracula theme
         private void OnDraculaClick(object sender, RoutedEventArgs e)
         {
             this.Background = Brushes.Black;
@@ -82,6 +92,7 @@ namespace Notepad_Pro
             MainTextBox.Foreground = Brushes.Purple;
         }
 
+        // Change to Nord theme
         private void OnNordClick(object sender, RoutedEventArgs e)
         {
             this.Background = Brushes.Navy;
